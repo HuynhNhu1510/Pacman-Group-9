@@ -6,6 +6,7 @@
 #include "Headers/Pacman.hpp"
 #include "Headers/MapCollision.hpp"
 // Bổ sung file Pacman
+// Bổ sung hàm trả về vị trí của 
 
 // Constructor của lớp Pacman : Khởi tạo tất cả các biến về giá trị mặc định
 Pacman::Pacman() :
@@ -201,3 +202,7 @@ void Pacman::update(unsigned char i_level, std::array<std::array<Cell, MAP_HEIGH
 	}
 }
 
+Position Pacman::get_position()
+{
+	return position;
+}
